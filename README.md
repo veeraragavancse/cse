@@ -1,1 +1,5 @@
-# cse
+This project implements a Student Assessment Predictor using a Genetic Algorithm (GA) in Python with a graphical user interface (GUI) built using Tkinter. The goal is to predict a student's final assessment score based on their previous academic performance. The core idea is to evolve a set of weight vectors (chromosomes) that best map previous marks to final marks using historical data.
+
+The genetic algorithm begins by generating a population of random individuals, where each individual represents a set of weights. These weights are used to compute predicted final marks using a dot product with the input data. The fitness of each individual is calculated using mean squared error (MSE) between predicted and actual final scores. The algorithm applies tournament selection, crossover, and mutation to generate new populations over multiple generations, aiming to minimize prediction error.
+
+The GUI allows users to enter new student marks and instantly receive a predicted final score based on the best-evolved solution. This combination of machine learning and interactive design provides an intuitive tool for educators or students to estimate outcomes based on academic trends. The system is lightweight, easy to run, and demonstrates the practical use of evolutionary algorithms in prediction tasks.
